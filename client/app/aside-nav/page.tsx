@@ -6,7 +6,7 @@ import { FaMusic } from "react-icons/fa";
 import { FaRegFolder } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa6";
 
-import logo from "@/public/logo.png"
+import logo from "@/assets/img/logo.png"
 
 const AsideNav : React.FC = () => {
     return (

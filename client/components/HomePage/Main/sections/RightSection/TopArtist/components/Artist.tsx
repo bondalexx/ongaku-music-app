@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaEllipsis } from "react-icons/fa6";
 import { albertSans } from "@/ui/fonts";
-import stevelacy from "@/public/stevelacy.png"
+import stevelacy from "@/assets/img/stevelacy.png"
 
 const Artist : React.FC = () => {
     return(

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FaRegHeart, FaUser } from "react-icons/fa";
 import { FaEllipsis } from "react-icons/fa6";
 import { albertSans } from "@/ui/fonts";
-import stevelacy from "@/public/stevelacy.png"
+import stevelacy from "@/assets/img/stevelacy.png"
 
 const Track : React.FC = () => {
     return <div style={{boxShadow:" 0px 1px 5px 0px #e6e6e6"}} className={` ${albertSans.className} px-[15px] h-[60px] ease-out duration-300 hover:bg-[#f5f4f4] rounded-[10px] flex items-center justify-between cursor-pointer`}>

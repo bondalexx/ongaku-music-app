@@ -1,3 +1,4 @@
+"use client";
 import { ReactElement, useEffect, useRef } from "react";
 
 export default function VideoComponent(): ReactElement {

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import station from "@/public/station.png"
-import album from "@/public/album.png"
+import station from "@/assets/img/station.png"
+import album from "@/assets/img/album.png"
 
 const PicksForYou: React.FC = () => {
     return (
