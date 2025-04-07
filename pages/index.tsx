@@ -16,10 +16,6 @@ export default function Home() {
   }, [status, session]);
 
   useEffect(() => {
-    console.log("Session updated:", session);
-  }, [session]);
-
-  useEffect(() => {
     if (token.length > 0) {
       router.push("/home");
     } else {
