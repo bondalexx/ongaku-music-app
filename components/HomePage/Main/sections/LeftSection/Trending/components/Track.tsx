@@ -3,19 +3,21 @@ import { FaRegHeart, FaUser } from "react-icons/fa";
 import { FaEllipsis } from "react-icons/fa6";
 import { albertSans } from "@/ui/fonts";
 import stevelacy from "@/public/img/stevelacy.png"
+import type { TrackInfo } from "@/types/tracks.interface";
 
-const Track : React.FC = () => {
+const Track: React.FC<{ trackInfo: TrackInfo, index: number }> = ({ trackInfo,index }) => {
+    console.log(trackInfo)
     return <div style={{boxShadow:" 0px 1px 5px 0px #e6e6e6"}} className={` ${albertSans.className} px-[15px] h-[60px] ease-out duration-300 hover:bg-[#f5f4f4] rounded-[10px] flex items-center justify-between cursor-pointer`}>
         <div className="flex gap-[65px]">
             <div className="flex gap-[15px] items-center">
-                <p className="text-[#9D9D9D] text-[20px] font-medium">01</p>
+                <p className="text-[#9D9D9D] text-[20px] font-medium w-[30px]">0{index+1}</p>
                 <div className="flex items-center gap-[15px]">
-                    <Image src={stevelacy} alt="stevelacy" height={45} width={45} className="rounded-[8px]" />
+                    <Image src={trackInfo.track.album.images[2].url} alt={trackInfo.track.album.name} height={45} width={45} className="rounded-[8px]" />
                     <div className=" flex flex-col">
-                        <p className="text-[20px] font-medium">Bad Habit</p>
+                        <p className="text-[20px] font-medium">{trackInfo.track.name}</p>
                         <div className="flex gap-[5px] items-center">
                             <FaUser fontSize="13px" color="#888888" />
-                            <span className="text-[13px] text-[#9b9b9b] font-semibold">Steve Lacy</span>
+                            <span className="text-[13px] text-[#9b9b9b] font-semibold">{trackInfo.track.artists[0].name}</span>
                         </div>
                     </div>
                 </div>

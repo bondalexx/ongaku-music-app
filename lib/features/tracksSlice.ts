@@ -2,7 +2,13 @@ import { createSlice } from '@reduxjs/toolkit';
 
 import { getTrendingTracks } from '@/api/tracks.api';
 
-const InitialState = {
+import { TrendingTracksState } from '@/types/tracks.interface';
+
+interface TracksState {
+    trendingTracks: TrendingTracksState;
+}
+
+const InitialState: TracksState = {
     trendingTracks: { tracks: null, loading: true },
 };
 

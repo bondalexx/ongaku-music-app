@@ -11,7 +11,6 @@ import scrollStyles from "@/styles/scroll.module.css";
 const HomePage : React.FC = () => {
     const { data: session,} = useSession();
     const { init } = useTracks();
-    const [data, setData] = useState<any>(null);
     useEffect(() => {
         if (session?.accessToken) {
           init(session?.accessToken);
