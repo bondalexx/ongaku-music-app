@@ -11,7 +11,6 @@ const TracksContainer : React.FC = () => {
             return [];
         }
     }
-    console.log(getFiveFirstTracks())
     return <div className="flex flex-col gap-[20px]">
         {
             getFiveFirstTracks().map((trackInfo: TrackInfo, index: number) => {
