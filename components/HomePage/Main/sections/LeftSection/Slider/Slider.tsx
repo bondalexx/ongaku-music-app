@@ -13,8 +13,7 @@ const Slider: React.FC<CustomCarouselProps> = ({ children }) => {
 
   const totalSlides: number = children.length;
 
-  // Duplicate slides to simulate infinite scroll
-  const extendedSlides = [...children, ...children.slice(0, 2)]; // Clone 2 slides for buffer
+  const extendedSlides = [...children, ...children.slice(0, 2)]; 
 
   const nextSlide = () => {
     setIndex((prev) => prev + 1);
@@ -38,11 +37,10 @@ const Slider: React.FC<CustomCarouselProps> = ({ children }) => {
 
   useEffect(() => {
     if (index === totalSlides - 1) {
-      // reached the clone of first slide
       setTimeout(() => {
         setIsTransitioning(false);
         setIndex(0);
-      }, 800); // match transition duration
+      }, 800);
     } else {
       setIsTransitioning(true);
     }

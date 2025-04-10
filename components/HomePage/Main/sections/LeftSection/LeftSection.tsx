@@ -1,9 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Trending from "./Trending/Trending";
 import Slider from "./Slider/Slider";
-
-import alternativeImg from "@/public/img/genre-alternative-3.png";
 
 const images = [
   { imgURL: "/img/genre-alternative.png", imgAlt: "alternative" },
@@ -22,12 +21,15 @@ const LeftSection: React.FC = () => {
       style={{ position: "relative", width: "100%", height: "500px" }}
       className="rounded-[40px] overflow-hidden"
     >
+      <Link href={`/genre/${image.imgAlt}`}>
+      
       <Image
         src={image.imgURL}
         alt={image.imgAlt}
         fill
         className="object-cover"
       />
+      </Link>
     </div>
   );
 })}
