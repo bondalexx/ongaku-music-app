@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Trending from "./Trending/Trending";
-import Slider from "./Slider/Slider";
+import Slider from "./Slider";
 
 const images = [
   { imgURL: "/img/genre-alternative.png", imgAlt: "alternative" },

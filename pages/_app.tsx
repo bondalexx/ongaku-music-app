@@ -3,7 +3,7 @@ import { SessionProvider } from "next-auth/react";
 import type { AppProps } from "next/app";
 
 import StoreProvider from "./StoreProvider";
-import AsideNav from "@/components/AsideNav/AsideNav";
+import AsideNav from "@/components/AsideNav";
 
 import "@/styles/globals.css";
 

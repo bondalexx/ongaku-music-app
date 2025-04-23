@@ -1,5 +1,5 @@
-import LeftSection from "./sections/LeftSection/LeftSection"
-import RightSection from "./sections/RightSection/RightSection"
+import LeftSection from "./LeftSection"
+import RightSection from "./RightSection"
 
 const Main : React.FC = () => {
     return (

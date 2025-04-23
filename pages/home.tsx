@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useTracks } from "@/hooks/home.hooks";
 
 import Header from "@/components/HomePage/Header/Header";
-import Main from "@/components/HomePage/Main/Main";
+import Main from "@/components/HomePage/Main";
 
 import scrollStyles from "@/styles/scroll.module.css";
 

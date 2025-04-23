@@ -1,4 +1,4 @@
-import PicksForYou from "./PicksForYou/PicksForYou";
+import PicksForYou from "./PicksForYou";
 import TopArtist from "./TopArtist/TopArtist";
 
 const RightSection: React.FC = () => {
